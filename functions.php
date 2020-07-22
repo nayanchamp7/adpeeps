@@ -1,18 +1,18 @@
 <?php
 /**
- * everstrap functions and definitions
+ * adpeeps functions and definitions
  *
- * @package everstrap
+ * @package adpeeps
  */
 
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
-$everstrap_includes = array(
+$adpeeps_includes = array(
     // '/theme-settings.php',                  // Initialize theme default settings.
-    // '/setup.php',                           // Theme setup and custom theme supports.
+    '/setup.php',                           // Theme setup and custom theme supports.
     // '/widgets.php',                         // Register widget area.
-    // '/enqueue.php',                         // Enqueue scripts and styles.
+    '/enqueue.php',                         // Enqueue scripts and styles.
     '/template-tags.php',                   // Custom template tags for this theme.
     // '/pagination.php',                      // Custom pagination for this theme.
     // '/hooks.php',                           // Custom hooks.
@@ -31,7 +31,7 @@ $everstrap_includes = array(
     '/custom-fields.php',                        // Custom Post type
 );
 
-foreach ($everstrap_includes as $file) {
+foreach ($adpeeps_includes as $file) {
     $filepath = locate_template('inc' . $file);
     if (!$filepath) {
         trigger_error(sprintf('Error locating /inc%s for inclusion', $file), E_USER_ERROR);

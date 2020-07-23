@@ -3,6 +3,27 @@
 /******* DATE:2020/07/20 ********/
 /********************************/
 /********************************/
+@font-face {
+	font-family: robotoregular;
+	src: url(../fonts/Roboto-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: robotoregular;
+	src: url(../fonts/Roboto-Light.ttf);
+	font-weight: 300;
+}
+@font-face {
+	font-family: robotoregular;
+	src: url(../fonts/Roboto-Medium.ttf);
+	font-weight: 500;
+}
+@font-face {
+	font-family: robotoregular;
+	src: url(../fonts/Roboto-Bold.ttf);
+	font-weight: 700;
+}
+
 html{-webkit-font-smoothing:antialiased}
 body{
 	margin:0;
@@ -72,6 +93,65 @@ p{
 img{
 	max-width:100%;
 	display:inline-block;
+}
+.page-wrapper {
+	background: url(../images/featured_bg.png);
+    overflow: hidden;
+}
+.page-wrapper h1,.page-wrapper h2,.page-wrapper h3,.page-wrapper h4,.page-wrapper h5,.page-wrapper h6 {
+	font-size: 1.412em;
+	font-family: 'robotoregular', serif;
+    margin: 17px 0;
+    line-height: 31px;
+}
+
+.page-wrapper p {
+	color: #1d1d1d;
+    padding-bottom: 15px;
+	line-height: 24px;
+	font-size: 17px;
+	font-weight: 300;
+    font-family: 'robotoregular';
+}
+.page-wrapper hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+.page-wrapper  strong {
+	font-size: 100%;
+    font-family: 'robotoregular';
+	font-weight: 500;
+}
+.page-wrapper a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+	color: #444;
+	text-decoration: none;
+    display: inline-block;
+}
+.error-404-wrapper {
+	text-align: center;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.container-mid {
+	margin-left: auto;
+    margin-right: auto;
+    width: 68%;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 .container{
 	width:100%;
@@ -950,6 +1030,9 @@ img{
 	}
 	.wpcf7 {
 		padding: 40px 20px;
+	}
+	.page-wrapper h1,.page-wrapper h2,.page-wrapper h3,.page-wrapper h4,.page-wrapper h5,.page-wrapper h6 {
+		font-size: 24px;
 	}
 }
 @media screen and (max-width:639px){

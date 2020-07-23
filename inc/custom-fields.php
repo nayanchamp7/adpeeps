@@ -2,7 +2,7 @@
 /**
  * Adpeeps custom fileds
  *
- * @package mc
+ * @package adpeeps
  */
 
 // Exit if accessed directly.
